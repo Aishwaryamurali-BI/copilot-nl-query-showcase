@@ -1,6 +1,6 @@
 # Copilot Natural Language Query Showcase  ## Overview A Power BI proof-of-concept demonstrating Copilot natural language query capabilities on a logistics dataset of 12,000 shipments across 8 carriers, 6 warehouses, and 30 US destinations.  
 ## Data Model ![Data Model](screenshots/data-model.png)  | Table | Rows | Description | |-------|------|-------------| | FactShipments | 12,000 | Shipment transactions (2023-2024) | | DimCarrier | 8 | Carrier companies | | DimWarehouse | 6 | Distribution centers | | DimShipMode | 6 | Shipping modes with target days | | DimProductCategory | 8 | Product categories | | DimDestination | 30 | US destination cities |  
-## Natural Language Use Cases | Query | Result | Value | |-------|--------|-------| | "Total shipments last month" | KPI card | Volume check | | "On-time rate by carrier" | Bar chart | Performance | | "Cheapest shipping mode" | Ranked table | Cost savings | | "Delivery trend over time" | Line chart | Trend analysis |  
-## Key Metrics - Total Shipments: 12,000 - On-Time Delivery Rate: ~31% - Avg Shipping Cost: ~$97 - Avg Delivery Days: ~6.7 
+## Natural Language Use Cases | Query | Result | Value | |-------|--------|-------| | "Total shipments last month" | KPI card | Volume check | | "On-time rate by carrier" | Bar chart | Performance | | "Cheapest shipping mode" | Ranked table | Cost savings | | "Delivery trend over time" | Line chart | Trend analysis | 
+## Key Metrics - Total Shipments: 12,000 - On-Time Delivery Rate: ~31% - Avg Shipping Cost: ~$97 - Avg Delivery Days: ~6.7  
 ## Documentation - [Use Case Matrix](docs/use-case-matrix.md) - [Copilot Evaluation](docs/copilot-evaluation.md)  
-## Tools - Power BI Desktop + Copilot - DAX measures optimized for NL queries - Star schema design for query accuracy
+# Tools - Power BI Desktop + Copilot - DAX measures optimized for NL queries - Star schema design for query accuracy
