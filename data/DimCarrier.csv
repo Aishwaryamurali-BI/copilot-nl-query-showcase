@@ -1,0 +1,9 @@
+CarrierKey,CarrierName,CarrierType,ContractTier
+1,FastFreight Express,Ground,Premium
+2,SkyLine Air Cargo,Air,Premium
+3,Pacific Coast Logistics,Ground,Standard
+4,MidWest Freight Co.,Ground,Standard
+5,Atlantic Rail Freight,Rail,Economy
+6,Global Ocean Shipping,Ocean,Economy
+7,NextDay Couriers,Air,Premium
+8,EcoGreen Transport,Ground,Standard

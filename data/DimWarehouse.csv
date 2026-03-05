@@ -1,0 +1,7 @@
+WarehouseKey,WarehouseName,City,State,Region,CapacitySqFt
+1,West Coast Hub,Los Angeles,CA,West,250000
+2,East Coast Hub,Newark,NJ,East,300000
+3,Central Distribution,Chicago,IL,Central,200000
+4,Southern Fulfillment,Dallas,TX,South,180000
+5,Pacific Northwest DC,Seattle,WA,West,150000
+6,Southeast Logistics,Atlanta,GA,South,220000

@@ -1,0 +1,7 @@
+ShipModeKey,ShipMode,TargetDays,PriorityLevel
+1,Standard Ground,7,Low
+2,Expedited Ground,4,Medium
+3,Next Day Air,1,High
+4,Two-Day Air,2,High
+5,Freight (LTL),10,Low
+6,Same Day,0,Critical

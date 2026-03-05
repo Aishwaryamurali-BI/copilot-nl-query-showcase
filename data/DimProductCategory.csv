@@ -1,0 +1,9 @@
+ProductCategoryKey,CategoryName,WeightClass,HandlingType
+1,Electronics,Light,Fragile
+2,Furniture,Heavy,Standard
+3,Apparel,Light,Standard
+4,Food & Beverage,Medium,Temperature Controlled
+5,Industrial Parts,Heavy,Hazmat
+6,Medical Supplies,Light,Fragile
+7,Office Supplies,Light,Standard
+8,Auto Parts,Medium,Standard
