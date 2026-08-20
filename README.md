@@ -1,6 +1,6 @@
 # Copilot Natural Language Query Showcase
 
-> A Power BI proof-of-concept demonstrating AI-powered analytics through Copilot natural language queries on a logistics dataset of 12,000 shipments across 8 carriers, 6 warehouses, and 30 US destinations.
+> A Power BI semantic model designed and documented for Copilot natural-language queries — a Copilot-readiness study on a logistics dataset of 12,000 shipments across 8 carriers, 6 warehouses, and 30 US destinations.
 
 ---
 
@@ -9,6 +9,8 @@
 This project explores how Power BI Copilot can democratize data access by allowing business users to ask questions in plain English and receive instant visual answers. The semantic model is specifically designed and optimized for natural language interaction — with descriptive measure names, a clean star schema, and well-documented column descriptions.
 
 **Key Question:** Can a logistics operations team replace ad-hoc report requests with natural language queries?
+
+> **Scope note:** Copilot requires Copilot-enabled Fabric capacity (F64/PPU), which this project did not have. The accuracy figures below are **projections** based on the model's design characteristics and Microsoft's documented Copilot behavior — not measured results from executed Copilot sessions. The [use-case matrix](docs/use-case-matrix.md) is written to double as a ready-to-run test plan for any workspace with Copilot enabled.
 
 ---
 
@@ -120,7 +122,7 @@ Average Satisfaction Score = AVERAGE(FactShipments[CustomerSatisfactionScore])
 
 26 queries documented across 6 business categories. Here are the highlights:
 
-### Simple Queries (Copilot accuracy: ~90%)
+### Simple Queries (projected accuracy: ~90%)
 
 | Query | Expected Result | Business Value |
 |:------|:----------------|:---------------|
@@ -129,7 +131,7 @@ Average Satisfaction Score = AVERAGE(FactShipments[CustomerSatisfactionScore])
 | "Total shipping cost this year" | ~$580K | Budget tracking |
 | "Average satisfaction score" | 3.21 / 5.0 | Service quality pulse |
 
-### Moderate Queries (Copilot accuracy: ~70%)
+### Moderate Queries (projected accuracy: ~70%)
 
 | Query | Expected Result | Business Value |
 |:------|:----------------|:---------------|
@@ -150,9 +152,9 @@ Average Satisfaction Score = AVERAGE(FactShipments[CustomerSatisfactionScore])
 
 ---
 
-## Copilot Evaluation Summary
+## Copilot Readiness Assessment
 
-| Complexity | Use Cases | Accuracy | Verdict |
+| Complexity | Use Cases | Projected Accuracy | Verdict |
 |:-----------|----------:|---------:|:--------|
 | Simple (single aggregation) | 12 | ~90–95% | Reliable for ad-hoc questions |
 | Moderate (breakdown + filter) | 10 | ~65–75% | Usually works, may need rephrasing |
@@ -160,7 +162,7 @@ Average Satisfaction Score = AVERAGE(FactShipments[CustomerSatisfactionScore])
 
 **Key Finding:** Copilot's accuracy depends more on semantic model quality than on the question complexity. Descriptive measure names, a clean star schema, and hidden technical columns are the biggest factors.
 
-> Full evaluation report: [docs/copilot-evaluation.md](docs/copilot-evaluation.md)
+> Full readiness assessment: [docs/copilot-evaluation.md](docs/copilot-evaluation.md)
 
 ---
 
@@ -183,9 +185,9 @@ copilot-nl-query-showcase/
 │   └── dashboard-page2.png
 ├── docs/
 │   ├── use-case-matrix.md         # 26 NL query use cases
-│   └── copilot-evaluation.md      # Copilot capability assessment
+│   └── copilot-evaluation.md      # Copilot readiness assessment
 └── pbix/
-    └── logistics-copilot-demo.pbix
+    └── Operation Logistics Dashboard.pbix
 ```
 
 ---
@@ -203,10 +205,10 @@ copilot-nl-query-showcase/
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/copilot-nl-query-showcase.git
+   git clone https://github.com/Aishwaryamurali-BI/copilot-nl-query-showcase.git
    ```
 
-2. Open `pbix/logistics-copilot-demo.pbix` in Power BI Desktop
+2. Open `pbix/Operation Logistics Dashboard.pbix` in Power BI Desktop
 
 3. Explore the data model in **Model View** (left sidebar)
 
@@ -233,3 +235,7 @@ copilot-nl-query-showcase/
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+More of my work: [portfolio](https://aishwaryamurali-bi.github.io) · [LinkedIn](https://www.linkedin.com/in/maishwaryamurali)

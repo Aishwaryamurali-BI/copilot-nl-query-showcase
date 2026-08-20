@@ -1,4 +1,4 @@
-# Power BI Copilot Evaluation Report
+# Power BI Copilot Readiness Assessment
 
 ## Document Information
 
@@ -6,14 +6,16 @@
 |-------|--------|
 | **Project** | Copilot Natural Language Query Showcase |
 | **Dataset** | Logistics Operations — 12,000 Shipments across 8 carriers, 6 warehouses, 30 destinations |
-| **Evaluation Period** | Testing conducted across 26 documented use cases |
+| **Scope** | 26 documented use cases assessed for Copilot readiness |
 | **Model Configuration** | Star schema with 1 fact table and 6 dimension tables, 12 DAX measures |
+
+> **Scope note:** this project did not have Copilot-enabled Fabric capacity (F64/PPU). All accuracy figures in this document are **projections** derived from the semantic model's design characteristics and Microsoft's documented Copilot behavior — not measured results from executed Copilot sessions. The use-case matrix doubles as a ready-to-run test plan for any workspace with Copilot enabled.
 
 ---
 
 ## 1. Executive Summary
 
-Power BI Copilot enables business users to query data using plain English instead of writing DAX formulas or building reports manually. This evaluation tested Copilot against a logistics semantic model to determine what it handles well, where it struggles, and when organizations should use Copilot versus traditional pre-built reports.
+Power BI Copilot enables business users to query data using plain English instead of writing DAX formulas or building reports manually. This assessment maps Copilot's expected behavior against a logistics semantic model to determine what it should handle well, where it is likely to struggle, and when organizations should use Copilot versus traditional pre-built reports.
 
 **Key Finding:** Copilot is highly effective for quick, ad-hoc questions involving single aggregations and simple filters (estimated 90%+ accuracy). It becomes progressively less reliable as query complexity increases — particularly with multi-step calculations, multi-table joins with conditional logic, and specific visual formatting requests. The biggest factor in Copilot accuracy is not Copilot itself but the quality of the underlying semantic model.
 
